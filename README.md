@@ -25,3 +25,12 @@ This repository allows you to deploy the latest <a href="https://umami.is/" targ
 
 
 Once the web service is deployed, you'll be redirected to the admin page, login with user "admin" and password "umami".
+
+## Keep-alive / health check
+
+This deployment exposes a lightweight **`GET /healthz`** endpoint (returns `200` with body `ok`). Use it for:
+
+- Render deploy health checks (configured in `render.yaml`)
+- External uptime pings (e.g. [cron-job.org](https://cron-job.org), UptimeRobot) to reduce cold starts on the free plan
+
+Umami also ships with **`GET /api/heartbeat`** if you prefer a check that hits the app itself.
