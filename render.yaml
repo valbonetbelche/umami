@@ -2,7 +2,7 @@ services:
   - type: web
     name: umami
     env: docker
-    repo: https://github.com/thomascenni/umami.git
+    # repo omitted — Render uses the Git repo this Blueprint is deployed from
     region: oregon # optional (defaults to oregon)
     plan: free
     branch: main

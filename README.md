@@ -2,9 +2,14 @@
 
 This repository allows you to deploy the latest <a href="https://umami.is/" target="_blank">Umami software</a> (v2.17.0) on Render.
 
-## Automatic Deploy
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/thomascenni/umami)
+## Automatic Deploy (Blueprint)
 
+1. [Connect GitHub to Render](https://render.com/docs/github) and grant access to this repo (required if the repo is **private**).
+2. In the Render Dashboard: **New → Blueprint**, select [valbonetbelche/umami](https://github.com/valbonetbelche/umami), branch `main`, then deploy.
+
+The one-click button below only works reliably for **public** repos:
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/valbonetbelche/umami)
 
 ## Manual Deploy
 
@@ -14,7 +19,7 @@ This repository allows you to deploy the latest <a href="https://umami.is/" targ
 
 3. Click on "+New/Web Service" to host Umami application
 
-4. Connect to this public repository: [https://github.com/thomascenni/umami](https://github.com/thomascenni/umami)
+4. Connect your GitHub account and select this repository: [https://github.com/valbonetbelche/umami](https://github.com/valbonetbelche/umami)
 
 5. Click on Continue, select a name for your web service, for example "umami"
 
